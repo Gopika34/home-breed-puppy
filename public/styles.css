@@ -1,0 +1,7 @@
+/* Optional scroll reveals are progressive enhancement: content is visible without JS. */
+.reveal-pending{opacity:0;transform:translateY(12px);transition:opacity .55s ease,transform .55s ease}
+.reveal-pending.revealed{opacity:1;transform:translateY(0)}
+@media(prefers-reduced-motion:reduce){.reveal-pending,.reveal-pending.revealed{opacity:1;transform:none;transition:none}}
+
+/* WhatsApp green and paired Call/WhatsApp actions remain clear on smaller screens. */
+@media(max-width:760px){.hero-actions .button{max-width:100%;}.primary-nav .nav-call{margin-top:9px;text-align:center;justify-content:center;}}
